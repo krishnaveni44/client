@@ -10,9 +10,7 @@ function App() {
   const dispatch = useDispatch();
   const { isLoggedIn, token } = useSelector((state) => state.userReducer);
 
-  // if a token exists, try to get the user data from the server,
-  // if this fetch has succeeded, App will redirect us to the emails page
-  // if this fetch failed, that means the token has expired and the user needs to login
+ 
   useEffect(() => {
     if (token) {
       dispatch(getUserAction());
@@ -32,7 +30,7 @@ function App() {
           </Route>
 
           <Route path='/email'>
-            {/* This route has multiple sub-routes */}
+          
             {isLoggedIn ? <EmailPage /> : <Redirect to='/account' />}
           </Route>
           

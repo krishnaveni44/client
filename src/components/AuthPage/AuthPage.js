@@ -8,18 +8,16 @@ import GmailIcon from './images/gmail.svg';
 export default function AuthPage() {
   const { user, isLoading, error } = useSelector((state) => state.userReducer);
 
-  // defines if the register or login form is displayed
+  
   const [isCreateNew, setIsCreateNew] = useState(false);
   const toggleIsCreateNew = () => setIsCreateNew(!isCreateNew);
 
-  // if the user has registered, and the email used has been applied,
-  // then toggle state to show 'login' component with the registered email.
-  useEffect(() => {
+    useEffect(() => {
     if (user.email) {
       toggleIsCreateNew();
       alert('Account successfully created!');
     }
-    // eslint-disable-next-line
+    
   }, [user.email]);
 
   return (

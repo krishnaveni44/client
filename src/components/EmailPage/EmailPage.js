@@ -18,14 +18,12 @@ export default function EmailPage() {
   const [drafts, setDrafts] = useState([]);
   const [trash, setTrash] = useState([]);
 
-  // this gets all emails linked to the user, upon mount
+  
   useEffect(() => {
     dispatch(getEmailsAction());
   }, [dispatch]);
 
-  // this sorts all the emails by categories and time,
-  // and sets all states accordingly.
-  // this runs each time the mailbox (redux) was updated
+ 
   useEffect(() => {
     // filter mailbox to UI categories
     let inboxArr = [...mailbox.inbox],
