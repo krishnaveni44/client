@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'https://gmail-clone-backend.herokuapp.com/api/v1';
+const url = 'https://gmail-clone1.herokuapp.com/api/v1';
 const headers = (token) => ({
   headers: {
     'Content-Type': 'application/json',
