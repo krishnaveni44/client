@@ -79,27 +79,26 @@ export default function Sidebar({
             selected={location.pathname === '/email/trash'}
           />
 
-      <ul className="side-bar-btn-group1 another">
-          <li>
-            <div>
-              <i className="fas fa-video"></i>
-              <span>New Meeting</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <i className="fas fa-keyboard"></i>
-              <span>Join a Meeting</span>
-            </div>
-          </li>
-          <li style={{ padding: "0px" }}>
+     <div className='SidebarOption_item__khTmt false undefined'>
+     <i className="fas fa-video" style={{margin:"0 5px 0 11px"}}></i>
+     <h3>New Meeting</h3>
+     <p></p>
+     </div>
+     <div className='SidebarOption_item__khTmt false undefined'>
+     <i className="fas fa-keyboard" style={{margin:"0 5px 0 11px"}}></i>
+     <h3>Join a Meeting</h3>
+     <p></p>
+     </div>
+      <ul className="side-bar-btn-group1 another" style={{margin:"10px 0 0 10px"}}>
+          
+          <li style={{ padding: "10px 13px 13px 10px",background:"#eaeaea" }}>
             <div className="hangout">
               <div></div>
               <img
                 src="https://i1.sndcdn.com/avatars-000658362800-46u3c7-t500x500.jpg"
-                alt="" style={{ width: "30px" }}
+                alt="" style={{borderRadius:"20px",width: "30px" }}
               />
-              <span>Krishnaveni</span>
+              <span style={{display:"block",margin:"-32px 0 0 42px"}}>Krishnaveni</span>
             </div>
           </li>
         </ul>
